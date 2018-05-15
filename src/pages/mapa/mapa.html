@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Mapa</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom] = "16" >
+    <agm-marker [latitude]="lat" [longitude]="lng">
+        <agm-info-window>La ubicación que se encontro en la busqueda</agm-info-window>
+    </agm-marker>
+  </agm-map>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-buttons end>
+      <button ion-button (click)="viewCtrl.dismiss()">
+        Cerrar
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

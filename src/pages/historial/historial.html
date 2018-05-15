@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Historial</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      Escaneos realizados
+    </ion-list-header>
+    <button ion-item *ngFor = "let busqueda of _historial; let i = index"  (click) = "abrirBusqueda(i)" >
+      <h2> {{ busqueda.info}} </h2>
+      <p>{{ busqueda.tipo }}</p>
+
+    </button>
+  </ion-list>
+</ion-content>
