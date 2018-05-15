@@ -1,6 +1,6 @@
 {
   "name": "appqr",
-  "app_id": "",
+  "app_id": "1065f73d",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
